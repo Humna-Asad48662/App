@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root  {
+  --background: 266 0% 95%;
+  --foreground: 266 0% 10%;
+  --card: 266 0% 90%;
+  --card-foreground: 266 0% 15%;
+  --popover: 266 0% 95%;
+  --popover-foreground: 266 95% 10%;
+  --primary: 266 60.4% 42.5%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 266 10% 78%;
+  --secondary-foreground: 0 0% 0%;
+  --muted: 228 10% 85%;
+  --muted-foreground: 266 0% 40%;
+  --accent: 228 10% 80%;
+  --accent-foreground: 266 0% 15%;
+  --destructive: 0 50% 50%;
+  --destructive-foreground: 266 0% 90%;
+  --border: 266 20% 78%;
+  --input: 266 20% 50%;
+  --ring: 266 60.4% 42.5%;
+  --radius: 0.5rem;
+}
+.dark  {
+  --background: 266 10% 10%;
+  --foreground: 266 0% 90%;
+  --card: 266 0% 10%;
+  --card-foreground: 266 0% 90%;
+  --popover: 266 10% 5%;
+  --popover-foreground: 266 0% 90%;
+  --primary: 266 60.4% 42.5%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 266 10% 20%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 228 10% 25%;
+  --muted-foreground: 266 0% 65%;
+  --accent: 228 10% 25%;
+  --accent-foreground: 266 0% 90%;
+  --destructive: 0 50% 50%;
+  --destructive-foreground: 266 0% 90%;
+  --border: 266 20% 50%;
+  --input: 266 20% 50%;
+  --ring: 266 60.4% 42.5%;
+  --radius: 0.5rem;
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground))
+}
+
+/* .card {
+  border-color: rgb(124, 102, 153);
+  border-width: 2px;
+} */
+
+.bg-card {
+  background-color: hsl(var(--card));
+}
+
+input, textarea {
+  border-color: rgb(124, 102, 153);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
